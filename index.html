@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Landing</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <script src="https://use.fontawesome.com/3e76115930.js"></script>
+  <link rel="icon" sizes="32x32" type="image/png" href="favicon-32x32.png">
+  <link rel="icon" sizes="96x96" type="image/png" href="favicon-96x96.png">
+  <link rel="icon" sizes="16x16" type="image/png" href="favicon-16x16.png">
+</head>
+
+<body itemscope itemtype="http://schema.org/SoftwareApplication">
+  <div id="container">
+      <header class="landing-header">
+          <div class="content--centered">
+          <div class="page-landing-block columns columns--2">
+            <div class="columns__item columns__item--half">
+              <h2><em class="color-white">YC Remix</em></h2>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+
+        <div class="content--centered">
+          <div class="announcement">
+            <img src="assets/bubble.svg" alt="bubble">
+            <p>Spirit is currently in development.</p>
+            <p>We know it&#x27;s going to be awesome! 
+            Spirit is the animation-tool that will change 
+            the way you create animations for the web.</p>
+            <p><em>Curious?</em> Leave your e-mail address 
+            below and be the first to play with the tool 
+            when it gets released.</p>
+            <p class="content--perspective">
+              <button class="button button--light-blue" href="#signup">Keep me posted</button>
+            </p>
+          </div>
+          
+      </main>
+      <footer class="footer footer--large">
+        <div class="content--centered">
+          <p>Designed by Patrick Brouwer, stolen and modfied by Jason Bell</a></p>
+        </div>
+      </footer>
+
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script> $('[href^="#"]').off().on('click', function (e) {
+    if ($(this).attr('href') != '#') {
+        e.preventDefault();
+        $('body').animate({scrollTop: $($(this).attr('href')).offset().top}, 1000, 'easeInCubic');
+    }
+    });
+  </script>
+</body>
+
+</html>
