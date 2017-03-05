@@ -1,5 +1,8 @@
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
+/*
+*{ border: 1px solid red; }
+*/
 
 html {
     font-family: sans-serif;
@@ -3095,7 +3098,7 @@ textarea {
 body {
     margin: 0;
     font-family: 'Inconsolata', monospace;
-    font-size: 19px;
+    font-size: 20px;
     color: #a5a9b5
 }
 
@@ -3166,7 +3169,9 @@ em {
 }
 
 main {
-    margin-top: 3em
+    margin-top: 3em;
+    margin-bottom: 5em;
+    padding-bottom: 10em;
 }
 
 em {
@@ -3316,6 +3321,7 @@ input[type=text].error {
 }
 
 .button {
+    margin-bottom: 2em;
     font-family: inherit;
     padding: .85em 2.5em;
     background: #cbb886;
@@ -3376,69 +3382,12 @@ input[type=text].error {
     text-align: center
 }
 
-@media (max-width:1080px) {
-    .columns {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center
-    }
-    .columns__item {
-        text-align: center;
-        margin: 2em 0
-    }
-}
-
-@media (max-width:750px) {
-    .columns__item {
-        width: 75%
-    }
-}
-
-@media (max-width:550px) {
-    .columns__item {
-        width: 100%;
-        padding: 0 15px
-    }
-}
-
 .footer {
-    background: #cbb886;
-    color: #1e7a68;
+    background: #60AADF;
     text-align: center;
-    padding-top: 2em;
-    padding-bottom: 2em
-}
-
-.footer a {
-    color: #1e7a68;
-    text-decoration: none
-}
-
-.no-touchevents .footer a:hover {
-    color: #272e46
-}
-
-.footer--large {
-    padding-top: 10em;
-    padding-bottom: 13em
-}
-
-@media (max-width:740px) {
-    .footer--large {
-        padding-top: 5em;
-        padding-bottom: 8em
-    }
-}
-
-@media (max-width:450px) {
-    .footer--large {
-        padding-top: 5em;
-        padding-bottom: 8em
-    }
+    margin-bottom: 0;
+    padding-top:0.5em;
+    padding-bottom: 0.01em;
 }
 
 .particles {
@@ -3477,22 +3426,23 @@ input[type=text].error {
 .landing-header {
     padding: 8em 0;
     padding-top: 12em;
-    margin-bottom: 8em;
+    margin-bottom: 4em;
+    /*background: #F26522;*/
     background: -webkit-radial-gradient(right bottom, 
-        circle cover, #aab7da, #8699cb);
-    background: radial-gradient(center bottom, circle cover, #354879, #1e2945);
+    circle cover, #F6976A, #F26522);
     position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
+    text-align: center;
 }
 
 @media (max-width:1130px) {
     .landing-header {
         margin-bottom: 0;
         padding-top: 10em;
-        padding-bottom: 24em;
+        padding-bottom: 9em;
         overflow: hidden
     }
 }
