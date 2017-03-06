@@ -34,9 +34,11 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/wrand.js"></script>
   <script>
-    var ycdata = $.getJSON("assets/yc.json");
+    var function get_success(data) {
+      var ycdata = data
+    }
+    $.getJSON("assets/yc.json", get_success);
     console.log(ycdata.prototype.toString.call(t))
     function change() {
       var $el = $(".announcement").find(".test");
