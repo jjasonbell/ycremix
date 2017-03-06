@@ -35,7 +35,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
   <script>
-    var function get_success(ycarray) {
+    function get_success(ycarray) {
       console.log(ycarray.prototype.toString.call(t))
     }
     $.getJSON("assets/yc.json", get_success);
@@ -45,7 +45,7 @@
             $(".announcement").css("margin-bottom", "3.1em")
             $(".announcement").append('<p class="test">somecontent</p>');
         } else {
-            $el.replaceWith('<p class="test">somenewcontent</p>');
+            $el.replaceWith('<p class="test">newcontent</p>');
         }
     }
   </script>
