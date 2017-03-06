@@ -3097,7 +3097,7 @@ textarea {
 
 body {
     margin: 0;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Comfortaa', cursive;
     font-size: 20px;
     color: #a5a9b5
 }
@@ -3324,9 +3324,14 @@ input[type=text].error {
     margin-bottom: 2em;
     font-family: inherit;
     padding: .85em 2.5em;
-    background: #cbb886;
+    background: #FFFFFF;
     outline: none;
-    border: none;
+    border: 6px solid;
+    border-radius: 60px;
+    /*
+    border-color: #F26522;
+    */
+    border-color: #60AADF;
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
@@ -3425,11 +3430,13 @@ input[type=text].error {
 
 .landing-header {
     padding: 8em 0;
-    padding-top: 12em;
+    padding-top: 10em;
+    padding-bottom: 10em;
     margin-bottom: 4em;
-    /*background: #F26522;*/
+    background: #F26522;/*
     background: -webkit-radial-gradient(right bottom, 
     circle cover, #F6976A, #F26522);
+    */
     position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
