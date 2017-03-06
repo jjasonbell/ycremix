@@ -34,20 +34,21 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/wrand.js"></script>
   <script>
     function get_success(ycarray) {
-      var item = ycarray[Math.floor(Math.random()*ycarray.length)];
+      var item = weightedRand(ycarray)
       console.log(item)
-    }
-    $.getJSON("assets/yc.json", get_success);
-    function change() {
       var $el = $(".announcement").find(".test");
-        if (!$el.length) {
-            $(".announcement").css("margin-bottom", "3.1em")
-            $(".announcement").append('<p class="test">somecontent</p>');
-        } else {
-            $el.replaceWith('<p class="test">newcontent</p>');
-        }
+      if (!$el.length) {
+        $(".announcement").css("margin-bottom", "3.1em")
+        $(".announcement").append('<p class="test">' + item['Name'] + '</p>');
+      } else {
+        $el.replaceWith('<p class="test">newcontent</p>');
+      }
+    }
+    function change() {
+      $.getJSON("assets/yc.json", get_success);
     }
   </script>
 </body>
