@@ -42,9 +42,9 @@
       var $el = $(".announcement").find(".test");
       if (!$el.length) {
         $(".announcement").css("margin-bottom", "3.1em")
-        $(".announcement").append('<p class="test">' + item['Name'] + '</p>');
+        $(".announcement").append('<p class="test">' + item['Name'] + ' for ' + 'new target here</p>');
       } else {
-        $el.replaceWith('<p class="test">newcontent</p>');
+        $el.replaceWith('<p class="test">' + item['Name'] + 'new target here</p>');
       }
     }
     function change() {
