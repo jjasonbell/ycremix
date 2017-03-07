@@ -55,10 +55,6 @@ a {
     -webkit-text-decoration-skip: objects
 }
 
-a {
-    text-decoration: none;
-}
-
 a:active,
 a:hover {
     outline-width: 0
@@ -3292,6 +3288,14 @@ input[type=text].error {
     max-width: 940px
 }
 
+p.bottom-right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    color: #fff;
+    padding-top: 140px;
+}
+
 .content--perspective {
     position: relative;
     margin: 0;
@@ -3436,14 +3440,10 @@ input[type=text].error {
 }
 
 .landing-header {
-    padding: 8em 0;
+    padding: 5em 0;
     padding-top: 10em;
-    padding-bottom: 10em;
     margin-bottom: 4em;
-    background: #F26522;/*
-    background: -webkit-radial-gradient(right bottom, 
-    circle cover, #F6976A, #F26522);
-    */
+    background: #F26522;
     position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
