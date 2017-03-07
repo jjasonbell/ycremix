@@ -41,10 +41,11 @@
       var co = weightedRand(ycarray);
       var target = targets[Math.floor(Math.random()*targets.length)];
       var $el = $(".announcement").find(".output");
-      var content = '<p class="output">' + co['Name'] + ' for ' + 
-        target + '</p>' + '</br>' + '<p class="output">' + co['Description']
+      var content = '<p class="output">' + '<span style="color:#60AADF">' + 
+        co['Name'] + ' for ' + 
+        target + '</span>' + '</br></br>' +  
+        '<a href="' + co['URL'] + '" target = _blank>' +  co['Name'] + '</a>: ' + co['Description'] + '</p>' 
       if (!$el.length) {
-        $(".announcement").css("margin-bottom", "0.25em")
         $(".announcement").append(content);
       } else {
         $el.replaceWith(content);

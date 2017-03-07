@@ -3144,6 +3144,10 @@ p {
     margin-bottom: 1.4em
 }
 
+.output a {
+    color: #F26522;
+}
+
 a {
     color: #fff;
     position: relative
@@ -3175,7 +3179,6 @@ em {
 main {
     margin-top: 3em;
     margin-bottom: 5em;
-    padding-bottom: 10em;
 }
 
 em {
@@ -3495,7 +3498,7 @@ input[type=text].error {
     }
 }
 a.plain:link, active, visited, hover {
-    color: #ffffff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -3572,9 +3575,6 @@ a.plain:link, active, visited, hover {
     font-size: 2em;
     /*color: #000000;*/
 }
-
-
-
 
 
 .inputform {
