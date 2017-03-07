@@ -41,11 +41,13 @@
       var co = weightedRand(ycarray);
       var target = targets[Math.floor(Math.random()*targets.length)];
       var $el = $(".announcement").find(".output");
+      var content = '<p class="output">' + co['Name'] + ' for ' + 
+        target + '</p>' + '</br>' + '<p class="output">' + co['Description']
       if (!$el.length) {
         $(".announcement").css("margin-bottom", "0.25em")
-        $(".announcement").append('<p class="output">' + co['Name'] + ' for ' + target + '</p>');
+        $(".announcement").append(content);
       } else {
-        $el.replaceWith('<p class="output">' + co['Name'] + ' for ' + target + '</p>');
+        $el.replaceWith(content);
       }
     }
   </script>
