@@ -28,7 +28,7 @@
           </div>
       </main>
       <div class="footer">
-          <p><span style="color:white">Some footer text</span></p>
+          <p><span style="color:white">Created by <a href="https://github.com/jjasonbell">Jason Bell</a></span></p>
       </div>
   </div>  <!-- end container -->
 
@@ -40,12 +40,12 @@
     function change() {
       var co = weightedRand(ycarray);
       var target = targets[Math.floor(Math.random()*targets.length)];
-      var $el = $(".announcement").find(".test");
+      var $el = $(".announcement").find(".output");
       if (!$el.length) {
-        $(".announcement").css("margin-bottom", "3.1em")
-        $(".announcement").append('<p class="test">' + co['Name'] + ' for ' + target + '</p>');
+        $(".announcement").css("margin-bottom", "0.25em")
+        $(".announcement").append('<p class="output">' + co['Name'] + ' for ' + target + '</p>');
       } else {
-        $el.replaceWith('<p class="test">' + co['Name'] + ' for ' + target + '</p>');
+        $el.replaceWith('<p class="output">' + co['Name'] + ' for ' + target + '</p>');
       }
     }
   </script>

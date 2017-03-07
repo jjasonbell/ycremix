@@ -55,6 +55,10 @@ a {
     -webkit-text-decoration-skip: objects
 }
 
+a {
+    text-decoration: none;
+}
+
 a:active,
 a:hover {
     outline-width: 0
@@ -3391,8 +3395,8 @@ input[type=text].error {
     background: #60AADF;
     text-align: center;
     margin-bottom: 0;
-    padding-top:0.5em;
-    padding-bottom: 0.01em;
+    padding-top: 10em;
+    padding-bottom: 20em;
 }
 
 .particles {
@@ -3558,65 +3562,14 @@ a.plain:link, active, visited, hover {
     }
 }
 
-.animation-grid {
-    margin: -2em 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row
+.output {
+    font-size: 2em;
+    /*color: #000000;*/
 }
 
-.animation-grid--show-all .animation-grid-item {
-    visibility: visible
-}
 
-@media (max-width:470px) {
-    .animation-grid {
-        margin-left: -15px;
-        margin-right: -15px
-    }
-}
 
-.animation-grid-item {
-    list-style: none;
-    text-align: center;
-    margin: 2em 0;
-    width: 33.33333%;
-    visibility: hidden
-}
 
-.animation-grid-item__img {
-    width: 100%;
-    height: auto;
-    max-width: 170px;
-    margin-bottom: 1em
-}
-
-.animation-grid-item__label {
-    width: 70%;
-    margin: 0 auto
-}
-
-@media (max-width:800px) {
-    .animation-grid-item {
-        width: 50%
-    }
-}
-
-@media (max-width:470px) {
-    .animation-grid-item {
-        padding-top: 3em;
-        margin-bottom: 3em;
-        width: 100%;
-        border-top: 1px solid #ebebeb
-    }
-}
 
 .inputform {
     position: relative
