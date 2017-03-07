@@ -3562,6 +3562,12 @@ a.plain:link, active, visited, hover {
     }
 }
 
+.announcement img {
+    min-width:40px;
+}
+
+
+
 .output {
     font-size: 2em;
     /*color: #000000;*/
